@@ -55,10 +55,10 @@ $(document).ready(function() {
   particlesJS("particles2", {
   "particles": {
     "number": {
-      "value": 200,
+      "value": 20,
       "density": {
         "enable": true,
-        "value_area": 561.194221302933
+        "value_area": 100
       }
     },
     "color": {
@@ -125,7 +125,7 @@ $(document).ready(function() {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "grab"
       },
       "onclick": {
@@ -177,7 +177,7 @@ $(document).ready(function() {
   			window.location.href = x.slice(0, t);
   		}
   	}
-  }, 1000);
+  }, 3000);
   $('#toggle1').on('change', function(){
   	if (this.checked){
   		$('.desc').hide();
