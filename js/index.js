@@ -50,6 +50,8 @@ $(document).ready(function() {
     // some code..
     moving = false;
     value = 10;
+    $('.inside').addClass('notransition');
+    $('logo').addClass('notransition').removeClass('logo');
   }
 
 
