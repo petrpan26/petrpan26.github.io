@@ -45,16 +45,18 @@ $(document).ready(function() {
 		}
 	});
   var moving = true;
+  var value = 10;
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     // some code..
     moving = false;
+    value = 10;
   }
 
 
   particlesJS("particles2", {
   "particles": {
     "number": {
-      "value": 10,
+      "value": value,
       "density": {
         "enable": true,
         "value_area": 100
