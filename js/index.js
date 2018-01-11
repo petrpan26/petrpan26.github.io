@@ -55,10 +55,10 @@ $(document).ready(function() {
   particlesJS("particles2", {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 10,
       "density": {
         "enable": true,
-        "value_area": 100
+        "value_area": 75
       }
     },
     "color": {
@@ -125,11 +125,11 @@ $(document).ready(function() {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "grab"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "push"
       },
       "resize": true
@@ -163,21 +163,7 @@ $(document).ready(function() {
   "retina_detect": true
 });
 
-  setInterval(function(){
-  	x = window.location.href;
-  	t = x.indexOf('#');
-  	if (t!=-1){
-  		v = x.slice(t, t.length);
-  		if (v.length!=6){
-  			window.location.href = x.slice(0, t);
-  		}else if (x.slice(t,t+5)!="#page"){
-  			alert(x.slice(t,t+5))
-  			window.location.href = x.slice(0, t);
-  		}else if (x[x.length-1]<'1' || x[x.length-1]>'5'){
-  			window.location.href = x.slice(0, t);
-  		}
-  	}
-  }, 3000);
+  
   $('#toggle1').on('change', function(){
   	if (this.checked){
   		$('.desc').hide();
@@ -258,7 +244,21 @@ $(document).ready(function() {
     var el = $(this).attr('href');
     scrollToElement(el);
   });
-  
+  window.addEventListener('hashchange', function(event){
+    x = event.newURL;
+    t = x.indexOf('#');
+    if (t!=-1){
+      v = x.slice(t, t.length);
+      if (v.length!=6){
+        window.location.href = x.slice(0, t);
+      }else if (x.slice(t,t+5)!="#page"){
+        alert(x.slice(t,t+5))
+        window.location.href = x.slice(0, t);
+      }else if (x[x.length-1]<'1' || x[x.length-1]>'5'){
+        window.location.href = x.slice(0, t);
+      }
+    }
+  });
   $(window).scroll(function() {
     var x = $(window).scrollTop();
 
