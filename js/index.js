@@ -195,9 +195,7 @@ $(document).ready(function() {
   	} else {
   		window.location.href = x+"#page2";
   	}
-  	setTimeout(function(){
-  		$('.desc').show();
-  	}, 500);
+  	$('.desc').show();
   });
   $('#anchorContacts').on('click', function(){
   	$('#toggle1').attr('checked', false);
