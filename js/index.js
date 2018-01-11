@@ -1,11 +1,3 @@
-var scrollToElement = function(el, ms){
-    var speed = (ms) ? ms : 600;
-    $('html,body').animate({
-        scrollTop: $(el).offset().top
-    }, speed);
-}
-
-
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
@@ -14,7 +6,7 @@ $(document).ready(function() {
 		var leavingSection = $(this);
 		if (nextIndex==1){
       $(".desc").html("Space Adventure!  <i class=\"fa fa-space-shuttle\" aria-hidden=\"true\">");
-			$("#toggleText").html("Main");
+			$("#toggleText").html("Menu");
 			$("#toggleText").css('border-left', '0.7vh solid #1ABC9C');
 			$("#toggleText").hover(function(){
 				$("#toggleText").css("background", "#1ABC9C");
@@ -52,14 +44,20 @@ $(document).ready(function() {
 		}
 		}
 	});
-  /*
+  var moving = true;
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    // some code..
+    moving = false;
+  }
+
+
   particlesJS("particles2", {
   "particles": {
     "number": {
       "value": 10,
       "density": {
         "enable": true,
-        "value_area": 75
+        "value_area": 100
       }
     },
     "color": {
@@ -84,7 +82,7 @@ $(document).ready(function() {
       "value": 1,
       "random": true,
       "anim": {
-        "enable": true,
+        "enable": false,
         "speed": 1,
         "opacity_min": 0,
         "sync": false
@@ -95,7 +93,7 @@ $(document).ready(function() {
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 4,
+        "speed": 0,
         "size_min": 0.3,
         "sync": false
       }
@@ -108,7 +106,7 @@ $(document).ready(function() {
       "width": 1
     },
     "move": {
-      "enable": true,
+      "enable": moving,
       "speed": 1,
       "direction": "none",
       "random": true,
@@ -126,11 +124,11 @@ $(document).ready(function() {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "grab"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -162,7 +160,7 @@ $(document).ready(function() {
     }
   },
   "retina_detect": true
-});*/
+});
 
   
   $('#toggle1').on('change', function(){
@@ -238,11 +236,6 @@ $(document).ready(function() {
   		window.location.href = x+"#page2";
   	}
   });
-  $('.nav-link').on('click', function(e) {
-    e.preventDefault();
-    var el = $(this).attr('href');
-    scrollToElement(el);
-  });
   window.addEventListener('hashchange', function(event){
     x = event.newURL;
     t = x.indexOf('#');
@@ -256,15 +249,6 @@ $(document).ready(function() {
       }else if (x[x.length-1]<'1' || x[x.length-1]>'5'){
         window.location.href = x.slice(0, t);
       }
-    }
-  });
-  $(window).scroll(function() {
-    var x = $(window).scrollTop();
-
-    if (x >= 42) {
-      $("#navbar").fadeIn(300);
-    } else {
-      $("#navbar").fadeOut(300);
     }
   });
   $('.contact li').each(function(idx, element){
@@ -423,7 +407,7 @@ $(document).ready(function() {
 	var r = {
 		strings: ["These are the default values", "Try them", "Use your own!", ".."],
 		stringsElement: null,
-		typeSpeed: 2,
+		typeSpeed: 2000,
 		startDelay: 0,
 		backSpeed: 0,
 		shuffle: !1,
