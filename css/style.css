@@ -311,7 +311,7 @@ dropdown input:checked ~ ul {
 }
 
 dropdown ul li:nth-child(1) {
-  border-left: 4px solid #1ABC9C;
+  border-left: 0.7vh solid #1ABC9C;
 }
 dropdown ul li:nth-child(1) .fa {
   color: #1ABC9C;
@@ -326,7 +326,7 @@ dropdown ul li:nth-child(1):hover .fa {
 
 
 dropdown ul li:nth-child(2) {
-  border-left: 4px solid #E74C3C;
+  border-left: 0.7vh solid #E74C3C;
 }
 dropdown ul li:nth-child(2) .fa {
   color: #E74C3C;
@@ -340,7 +340,7 @@ dropdown ul li:nth-child(2):hover .fa {
 }
 
 dropdown ul li:nth-child(3) {
-  border-left: 4px solid #0072B5;
+  border-left: 0.7vh solid #0072B5;
 }
 dropdown ul li:nth-child(3) .fa {
   color: #0072B5;
@@ -354,13 +354,13 @@ dropdown ul li:nth-child(3):hover .fa {
 }
 
 dropdown ul li:nth-child(4) {
-  border-left: 4px solid #673AB7;
+  border-left: 0.7vh solid #FFEB3B;
 }
 dropdown ul li:nth-child(4) .fa {
-  color: #673AB7;
+  color: #FFEB3B;
 }
 dropdown ul li:nth-child(4):hover {
-  background: #673AB7;
+  background: #FFEB3B;
   color: white;
 }
 dropdown ul li:nth-child(4):hover .fa {

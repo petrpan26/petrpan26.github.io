@@ -15,7 +15,7 @@ $(document).ready(function() {
 		if (nextIndex==1){
       $(".desc").html("Space Adventure!  <i class=\"fa fa-space-shuttle\" aria-hidden=\"true\">");
 			$("#toggleText").html("Main");
-			$("#toggleText").css('border-left', '4px solid #1ABC9C');
+			$("#toggleText").css('border-left', '0.7vh solid #1ABC9C');
 			$("#toggleText").hover(function(){
 				$("#toggleText").css("background", "#1ABC9C");
 			}, function(){
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		}else if (nextIndex==2){
       $(".desc").html("I haven't commited any crime !");
 			$("#toggleText").html("Profile");
-			$("#toggleText").css('border-left', '4px solid #E74C3C');
+			$("#toggleText").css('border-left', '0.7vh solid #E74C3C');
 			$("#toggleText").hover(function(){
 				$("#toggleText").css("background", "#E74C3C");
 			}, function(){
@@ -33,7 +33,7 @@ $(document).ready(function() {
 		} else if (nextIndex==3){
       $(".desc").html("How to not procrastinate 101 !");
 			$("#toggleText").html("Projects");
-			$("#toggleText").css('border-left', '4px solid #0072B5');
+			$("#toggleText").css('border-left', '0.7vh solid #0072B5');
 			$("#toggleText").hover(function(){
 				$("#toggleText").css("background", "#0072B5");
 			}, function(){
@@ -43,9 +43,9 @@ $(document).ready(function() {
 		} else if (nextIndex==4){
       $(".desc").html("Call me  <i class=\"fa fa-phone\" aria-hidden=\"true\"></i>");
 			$("#toggleText").html("Contact");
-			$("#toggleText").css('border-left', '4px solid #673AB7');
+			$("#toggleText").css('border-left', '0.7vh solid #FFEB3B');
 			$("#toggleText").hover(function(){
-				$("#toggleText").css("background", "#673AB7");
+				$("#toggleText").css("background", "#FFEB3B");
 			}, function(){
 				$("#toggleText").css("background", "rgba(0,0,0,0)");
 			});
