@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
-  	anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+  	anchors: ['page1', 'page2', 'page3', 'page4'],
   	onLeave: function(index, nextIndex, direction){
 		var leavingSection = $(this);
 		if (nextIndex==1){
@@ -186,7 +186,7 @@ $(document).ready(function() {
   	}
   	setTimeout(function(){
   		$('.desc').show();
-  	}, 1000);
+  	}, 0);
   });
   $('#anchorBio').on('click', function(){
   	$('#toggle1').attr('checked', false);
@@ -212,7 +212,7 @@ $(document).ready(function() {
   	}
   	setTimeout(function(){
   		$('.desc').show();
-  	}, 500);
+  	}, 0);
   });
   $('#anchorProjects').on('click', function(){
   	$('#toggle1').attr('checked', false);
@@ -226,7 +226,7 @@ $(document).ready(function() {
   	}
   	setTimeout(function(){
   		$('.desc').show();
-  	}, 500);
+  	}, 0);
   });
   $('#arrow-down').on('click', function(e){
   	var x = document.URL;
