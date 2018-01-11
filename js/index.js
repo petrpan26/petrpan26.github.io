@@ -52,6 +52,7 @@ $(document).ready(function() {
 		}
 		}
 	});
+  /*
   particlesJS("particles2", {
   "particles": {
     "number": {
@@ -161,7 +162,7 @@ $(document).ready(function() {
     }
   },
   "retina_detect": true
-});
+});*/
 
   
   $('#toggle1').on('change', function(){
