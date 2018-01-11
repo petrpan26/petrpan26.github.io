@@ -422,11 +422,11 @@ $(document).ready(function() {
 	var r = {
 		strings: ["These are the default values", "Try them", "Use your own!", ".."],
 		stringsElement: null,
-		typeSpeed: 0,
+		typeSpeed: 2,
 		startDelay: 0,
 		backSpeed: 0,
 		shuffle: !1,
-		backDelay: 500,
+		backDelay: 2000,
 		loop: !1,
 		loopCount: !1,
 		showCursor: !0,
