@@ -267,13 +267,12 @@ dropdown{
    display: inline-block;
    position: fixed;
    top:20px;
-   right: 3%;
-   font-weight: 700;
-   font-size: 2em;
+   right: 20px;
+   font-size: 4vh;
 }
 dropdown label, dropdown ul li{
   display: block;
-  width: 150px;
+  width: 22vh;
   background: rgba(0,0,0,0);
   padding: 15px 20px;
   color: #fff;
