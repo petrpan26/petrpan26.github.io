@@ -46,7 +46,7 @@ a {
   color: #33A9B7;
 }
 #typer-size{
-	font-size: 30px;
+	font-size: 5vh;
 }
 a:hover,
 a:focus {
@@ -393,18 +393,18 @@ dropdown ul li:nth-child(4):hover .fa {
 .contact {
   position: relative;
   text-align: center;
-  top: 200px;
+  top: 27vh;
 }
 
 .contact a {
   color: white;
-  font-size: 40px;
+  font-size: 7vh;
   display: inline-block;
   background: transparent;
 }
 
 .contact p{
-  font-size: 25px;
+  font-size: 4vh;
   font-family: 'Source Sans Pro', sans-serif;
   text-align:center;
 }
@@ -413,7 +413,7 @@ dropdown ul li:nth-child(4):hover .fa {
     content: '';
     display: block;
     width: 0;
-    height: 3px;
+    height: 5px;
     background: #fff;
     transition: width .3s;
 }
