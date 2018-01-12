@@ -4,6 +4,7 @@ $(document).ready(function() {
   	anchors: ['page1', 'page2', 'page3', 'page4'],
   	onLeave: function(index, nextIndex, direction){
 		var leavingSection = $(this);
+    $('.section').fadeTo("fast", 1);
 		if (nextIndex==1){
       $(".desc").html("Space Adventure!  <i class=\"fa fa-space-shuttle\" aria-hidden=\"true\">");
 			$("#toggleText").html("Menu");
@@ -170,8 +171,10 @@ $(document).ready(function() {
   $('#toggle1').on('change', function(){
   	if (this.checked){
   		$('.desc').hide();
+      $('.section').fadeTo("fast", 0.2);
   	} else {
   		$('.desc').show();
+      $('.section').fadeTo("fast", 1);
   	}
   });
   $('#anchorMain').on('click', function(){
@@ -226,7 +229,7 @@ $(document).ready(function() {
   	}
   	setTimeout(function(){
   		$('.desc').show();
-  	}, 0);
+  	}, 0 );
   });
   $('#arrow-down').on('click', function(e){
   	var x = document.URL;
