@@ -239,7 +239,7 @@ $(document).ready(function() {
   	if (a>='0' && a<='9'){
   		x = x.slice(0, -1);
   		a = String.fromCharCode(a.charCodeAt() + 1) 
-  		if (a<=5)
+  		if (a<=4)
   			window.location.href = x+a;
   	} else {
   		window.location.href = x+"#page2";
