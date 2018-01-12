@@ -171,11 +171,15 @@ var Carousel3D = function () {
 
           // 给每个dom绑定click事件
           $e.click(function (ev) {
-            console.log($(e));
-            $('.carousel-3d .carousel-item p').css('font-size', '0vh');
-            $('.carousel-3d .carousel-item').fadeTo('fast', 0.2);
-            $(ev.target).fadeTo('fast', 1);
-            $(ev.target).find('p').css('font-size', '3vh');
+            if ($('.focus-3d').attr('id') != $(e).attr('id')){
+              $('.carousel-3d .carousel-item p').css('font-size', '0vh');
+              $('.carousel-3d .carousel-item').fadeTo('fast', 0.2);
+              $(ev.target).fadeTo('fast', 1);
+              $(ev.target).find('p').css('font-size', '3vh');
+            }
+            else {
+              
+            }
             // 确定要旋转的弧度
             var i = $(ev.target).data('gpnum'),
                 theta = _me.getNextTheta(i);
