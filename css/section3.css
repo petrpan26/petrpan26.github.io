@@ -1,0 +1,10 @@
+.projects {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+}
+
+h1 {
+	font-size: 4vh;
+}

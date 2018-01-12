@@ -1,0 +1,37 @@
+.carousel-3d {
+  position: relative;
+  width: 1vh;
+  height: 1vh;
+  background-color: #2d4aff;
+  margin: 25vh auto;
+}
+.carousel-3d .carousel-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 35vh;
+  height: 35vh;
+  margin-left: -17.5vh;
+  margin-top: -17.5vh;
+  background-size: cover;
+}
+.carousel-3d .carousel-item:nth-child(1) {
+  background-image: url("../assets/chef.jpg");
+}
+.carousel-3d .carousel-item:nth-child(2) {
+  background-image: url("../assets/translator.jpg");
+}
+.carousel-3d .carousel-item:nth-child(3) {
+  background-image: url("../assets/whisper.png");
+}
+.carousel-3d .carousel-item:nth-child(4) {
+  background-image: url("../assets/compress.png");
+  background-color: #F44336;
+}
+
+.carousel-3d .carousel-item p{
+  top: 37vh;
+  position: absolute;
+  display: table-cell;
+  font-size: 0vh;
+}

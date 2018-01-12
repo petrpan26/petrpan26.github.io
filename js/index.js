@@ -24,7 +24,7 @@ $(document).ready(function() {
 				$("#toggleText").css("background", "rgba(0,0,0,0)");
 			});
 		} else if (nextIndex==3){
-      $(".desc").html("How to not procrastinate 101 !");
+      $(".desc").html("Strong !");
 			$("#toggleText").html("Projects");
 			$("#toggleText").css('border-left', '0.7vh solid #0072B5');
 			$("#toggleText").hover(function(){
