@@ -9,10 +9,10 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 35vh;
-  height: 35vh;
-  margin-left: -17.5vh;
-  margin-top: -17.5vh;
+  width: 32vh;
+  height: 32vh;
+  margin-left: -16vh;
+  margin-top: -16vh;
   background-size: cover;
 }
 .carousel-3d .carousel-item:nth-child(1) {
