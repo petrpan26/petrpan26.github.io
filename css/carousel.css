@@ -35,3 +35,34 @@
   display: table-cell;
   font-size: 0vh;
 }
+
+.left-holder {
+  z-index: -1;
+  position: absolute;
+  right : 22vh;
+  top: -5vh;
+  color: #ffffff;
+}
+
+.left-holder span{
+  font-size: 10vh;
+}
+
+#arrow-right {
+  display: none
+}
+.right-holder {
+  z-index: -1;
+  position: absolute;
+  right : -24vh;
+  top: -5vh;
+  color: #ffffff;
+}
+
+.right-holder span{
+  font-size: 10vh;
+}
+
+#right-left {
+  display: none
+}

@@ -170,14 +170,14 @@ var Carousel3D = function () {
           $e.data('gpnum', i);
 
           // 给每个dom绑定click事件
-          $e.click(function (e) {
-            console.log($(e.props));
+          $e.click(function (ev) {
+            console.log($(e));
             $('.carousel-3d .carousel-item p').css('font-size', '0vh');
             $('.carousel-3d .carousel-item').fadeTo('fast', 0.2);
-            $(e.target).fadeTo('fast', 1);
-            $(e.target).find('p').css('font-size', '3vh');
+            $(ev.target).fadeTo('fast', 1);
+            $(ev.target).find('p').css('font-size', '3vh');
             // 确定要旋转的弧度
-            var i = $(e.target).data('gpnum'),
+            var i = $(ev.target).data('gpnum'),
                 theta = _me.getNextTheta(i);
 
             // 开始 tween

@@ -1,6 +1,5 @@
 
 $(document).ready(function() {
-
   $('.carousel-3d .carousel-item').fadeTo('fast', 0.2);
   $('#foodguru').fadeTo('fast', 1);
   $('#fullpage').fullpage({
@@ -268,6 +267,8 @@ $(document).ready(function() {
   		$(element).css('font-size', '40px');
   	});
   });
+  var listCarousel = $('.carousel-3d .carousel-item');
+  var currentChild = 0;
 });
 
 
