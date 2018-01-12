@@ -36,9 +36,9 @@ $(document).ready(function() {
 		} else if (nextIndex==4){
       $(".desc").html("Call me  <i class=\"fa fa-phone\" aria-hidden=\"true\"></i>");
 			$("#toggleText").html("Contact");
-			$("#toggleText").css('border-left', '0.7vh solid #FFEB3B');
+			$("#toggleText").css('border-left', '0.7vh solid #F9A825');
 			$("#toggleText").hover(function(){
-				$("#toggleText").css("background", "#FFEB3B");
+				$("#toggleText").css("background", "#F9A825");
 			}, function(){
 				$("#toggleText").css("background", "rgba(0,0,0,0)");
 			});

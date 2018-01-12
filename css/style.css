@@ -367,13 +367,13 @@ dropdown ul li:nth-child(3):hover .fa {
 }
 
 dropdown ul li:nth-child(4) {
-  border-left: 0.7vh solid #FFEB3B;
+  border-left: 0.7vh solid #F9A825;
 }
 dropdown ul li:nth-child(4) .fa {
-  color: #FFEB3B;
+  color: #F9A825;
 }
 dropdown ul li:nth-child(4):hover {
-  background: #FFEB3B;
+  background: #F9A825;
   color: white;
 }
 dropdown ul li:nth-child(4):hover .fa {
