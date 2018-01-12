@@ -1,5 +1,8 @@
 
 $(document).ready(function() {
+
+  $('.carousel-3d .carousel-item').fadeTo('fast', 0.2);
+  $('#foodguru').fadeTo('fast', 1);
   $('#fullpage').fullpage({
   	anchors: ['page1', 'page2', 'page3', 'page4'],
   	onLeave: function(index, nextIndex, direction){

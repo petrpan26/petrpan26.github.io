@@ -173,6 +173,8 @@ var Carousel3D = function () {
           $e.click(function (e) {
             console.log($(e.props));
             $('.carousel-3d .carousel-item p').css('font-size', '0vh');
+            $('.carousel-3d .carousel-item').fadeTo('fast', 0.2);
+            $(e.target).fadeTo('fast', 1);
             $(e.target).find('p').css('font-size', '3vh');
             // 确定要旋转的弧度
             var i = $(e.target).data('gpnum'),
