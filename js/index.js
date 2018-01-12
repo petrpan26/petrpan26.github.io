@@ -255,7 +255,7 @@ $(document).ready(function() {
       }else if (x.slice(t,t+5)!="#page"){
         alert(x.slice(t,t+5))
         window.location.href = x.slice(0, t);
-      }else if (x[x.length-1]<'1' || x[x.length-1]>'5'){
+      }else if (x[x.length-1]<'1' || x[x.length-1]>'4'){
         window.location.href = x.slice(0, t);
       }
     }
