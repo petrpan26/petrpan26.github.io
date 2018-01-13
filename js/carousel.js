@@ -142,6 +142,7 @@ var Carousel3D = function () {
 
   // 初始化控件
 
+  var CURINFO = "";
 
   _createClass(Carousel3D, [{
     key: 'init',
@@ -178,7 +179,26 @@ var Carousel3D = function () {
               $(ev.target).find('p').css('font-size', '3vh');
             }
             else {
-              
+              var queryStr = '.' + $('.focus-3d').attr('id');
+              $('.projects').fadeTo('slow', 0);
+              $('dropdown').fadeTo('slow', 0);
+              $('dropdown').css('z-index', -1);
+              $('.desc').fadeTo('slow', 0);
+              $('.overlay').show();
+              $('.overlay').css('z-index', 10001);
+              $(queryStr).fadeTo('slow', 1);
+              $(queryStr).css('z-index', 10000);
+              $('.cancel').on('click', function(){
+                $('.projects').fadeTo('slow', 1);
+                $('dropdown').fadeTo('slow', 1);
+                $('.desc').fadeTo('slow', 1);
+                $('.overlay').hide();
+                $(queryStr).fadeTo('slow', 0);
+                $('.cancel').off('click');
+                $(queryStr).css('z-index', 0);
+                $('overlay').css('z-index', 0);
+                $('dropdown').css('z-index', 0);
+              });
             }
             // 确定要旋转的弧度
             var i = $(ev.target).data('gpnum'),
