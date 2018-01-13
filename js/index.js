@@ -56,6 +56,11 @@ $(document).ready(function() {
     $('.inside').addClass('notransition');
     $('logo').addClass('notransition').removeClass('logo');
     $.fx.off = !$.fx.off;
+    $('.overlay').children.each(function(idx){
+      if ($('this').attr('class') != 'cancel'){
+        $('this').css('font-size', '2vh');
+      }
+    })
   }
 
 
