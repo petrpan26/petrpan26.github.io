@@ -52,9 +52,8 @@ $(document).ready(function() {
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     // some code..
     moving = false;
-    value = 10;
-    $('.inside').addClass('notransition');
-    $('logo').addClass('notransition').removeClass('logo');
+    value = 10;  
+    $.fx.off = !$.fx.off;
   }
 
 
