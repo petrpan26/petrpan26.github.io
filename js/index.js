@@ -25,7 +25,7 @@ $(document).ready(function() {
 				$("#toggleText").css("background", "rgba(0,0,0,0)");
 			});
 		} else if (nextIndex==3){
-      $(".desc").html("Strong !");
+      $(".desc").html("Not procrastinating !");
 			$("#toggleText").html("Projects");
 			$("#toggleText").css('border-left', '0.7vh solid #0072B5');
 			$("#toggleText").hover(function(){
@@ -59,7 +59,9 @@ $(document).ready(function() {
       if ($(ele).attr('class') != 'cancel'){
         $(ele).css('font-size', '2.8vh');
       }
-    })
+    });
+    $('.info').css('font-size', '2.3vh')
+    $('.desc').css('left', '-99999999px');
   }
 
 
