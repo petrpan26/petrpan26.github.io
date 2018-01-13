@@ -6,7 +6,6 @@ $(document).ready(function() {
   	anchors: ['page1', 'page2', 'page3', 'page4'],
   	onLeave: function(index, nextIndex, direction){
 		var leavingSection = $(this);
-    $('.section').fadeTo("fast", 1);
 		if (nextIndex==1){
       $(".desc").html("Space Adventure!  <i class=\"fa fa-space-shuttle\" aria-hidden=\"true\">");
 			$("#toggleText").html("Menu");
@@ -186,6 +185,7 @@ $(document).ready(function() {
   	}
   });
   $('#anchorMain').on('click', function(){
+    $('.section').fadeTo("fast", 1);
   	$('#toggle1').attr('checked', false);
   	var x = document.URL;
   	var a = x[x.length-1];
@@ -200,6 +200,7 @@ $(document).ready(function() {
   	}, 0);
   });
   $('#anchorBio').on('click', function(){
+    $('.section').fadeTo("fast", 1);
   	$('#toggle1').attr('checked', false);
   	var x = document.URL;
   	var a = x[x.length-1];
@@ -212,6 +213,7 @@ $(document).ready(function() {
   	$('.desc').show();
   });
   $('#anchorContacts').on('click', function(){
+    $('.section').fadeTo("fast", 1);
   	$('#toggle1').attr('checked', false);
   	var x = document.URL;
   	var a = x[x.length-1];
@@ -226,6 +228,7 @@ $(document).ready(function() {
   	}, 0);
   });
   $('#anchorProjects').on('click', function(){
+    $('.section').fadeTo("fast", 1);
   	$('#toggle1').attr('checked', false);
   	var x = document.URL;
   	var a = x[x.length-1];
