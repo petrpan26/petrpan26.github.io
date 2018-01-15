@@ -172,14 +172,17 @@ $(document).ready(function() {
   
   $('#toggle1').on('change', function(){
   	if (this.checked){
+      $('.dropdown ul li').css('z-index', 1000000);
   		$('.desc').hide();
       $('.section').fadeTo("fast", 0.2);
   	} else {
+      $('.dropdown ul li').css('z-index', -1);
   		$('.desc').show();
       $('.section').fadeTo("fast", 1);
   	}
   });
   $('#anchorMain').on('click', function(){
+    $('.dropdown ul li').css('z-index', -1);
     $('.section').fadeTo("fast", 1);
   	$('#toggle1').attr('checked', false);
   	var x = document.URL;
@@ -195,6 +198,7 @@ $(document).ready(function() {
   	}, 0);
   });
   $('#anchorBio').on('click', function(){
+    $('.dropdown ul li').css('z-index', -1);
     $('.section').fadeTo("fast", 1);
   	$('#toggle1').attr('checked', false);
   	var x = document.URL;
@@ -208,6 +212,7 @@ $(document).ready(function() {
   	$('.desc').show();
   });
   $('#anchorContacts').on('click', function(){
+    $('.dropdown ul li').css('z-index', -1);
     $('.section').fadeTo("fast", 1);
   	$('#toggle1').attr('checked', false);
   	var x = document.URL;
@@ -223,6 +228,7 @@ $(document).ready(function() {
   	}, 0);
   });
   $('#anchorProjects').on('click', function(){
+    $('.dropdown ul li').css('z-index', -1);
     $('.section').fadeTo("fast", 1);
   	$('#toggle1').attr('checked', false);
   	var x = document.URL;

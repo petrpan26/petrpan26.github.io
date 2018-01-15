@@ -103,6 +103,9 @@ dropdown label, dropdown ul li{
   padding: 15px 20px;
   color: #fff;
 }
+dropdown ul li{
+  z-index: -1;
+}
 dropdown label:hover, dropdown ul li:hover{
   background: #1ABC9C;
   color: white;
