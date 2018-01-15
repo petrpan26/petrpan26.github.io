@@ -16,7 +16,7 @@ $(document).ready(function() {
 				$("#toggleText").css("background", "rgba(0,0,0,0)");
 			});
 		}else if (nextIndex==2){
-      $(".desc").html("I haven't commited any crime !");
+      $(".desc").html("Look at me!");
 			$("#toggleText").html("Profile");
 			$("#toggleText").css('border-left', '0.7vh solid #E74C3C');
 			$("#toggleText").hover(function(){
@@ -55,13 +55,6 @@ $(document).ready(function() {
     $('.inside').addClass('notransition');
     $('logo').addClass('notransition').removeClass('logo');
     $.fx.off = !$.fx.off;
-    $('.overlay').children().each(function(idx, ele){
-      if ($(ele).attr('class') != 'cancel'){
-        $(ele).css('font-size', '2.8vh');
-      }
-    });
-    $('.info').css('font-size', '2.3vh')
-    $('.desc').css('left', '-99999999px');
   }
 
 

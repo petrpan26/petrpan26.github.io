@@ -2,8 +2,10 @@
 <html lang="en" >
    <head>
       <meta charset="UTF-8">
+
       <title>Hi I'm Hoang </title>
-      <base target="_blank">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Comfortaa|Cormorant+Garamond|Poiret+One" rel="stylesheet">
@@ -23,10 +25,12 @@
       <link rel="stylesheet" href="css/section4.css">
       <link rel="stylesheet" href="css/section3.css">
       <link rel="stylesheet" href="css/section2.css">
-      <link rel="stylesheet" href="css/carousel.css">
+      <link rel="stylesheet" href="css/carousel-projects.css">
+      <link rel="stylesheet" href="css/carousel-info.css">
       <script src='js/jquery.min.js'></script>
       <script src='js/particles.min.js'></script>
       <script src='https://cdn.bootcss.com/tween.js/r14/Tween.min.js'></script>
+      <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
       <script  src="js/jquery.touchSwipe.min.js"></script>
       <script  src="js/index.js"></script>
       <script  src="js/jquery.fullPage.js"></script>
@@ -243,16 +247,50 @@
          </div>
          <div class = "section">
             <section class = "section2">
-               <div class="info">
+               <div class="info" >
                   <div class="container">
                      <div class="row">
-                        <div class="col-md-12 col-sm-12">
+                        <div class="col-md-12">
                            <h1>Hey there.</h1>
                            <p>
-                              My name is Hoang Phan. I'm currently a Computer Science student at University of Waterloo (Goose!). In my free time, I enjoy discussing algorithmic and data problems with my friends, learning something new or doing stupid things with my girlfriend. My area of interest are Software Engineering, Algorithm and Data Science. Check the stuff I did below. 
+                              My name is Hoang Phan. I'm currently a Computer Science student at University of Waterloo (Goose!). In my free time, I enjoy discussing interesting problems with my friends, learning something new or doing stupid things with my girlfriend. My area of interest are Software Engineering, Algorithm and Data Science. Check the stuff I did below. 
                            </p>
                         </div>
-                     </div> 
+                        <div class="col-md-12">
+                        <div class="intro-car">
+                           <div class="carousel carousel-showsixmoveone slide" id="carousel123">
+                             <div class="carousel-inner">
+                               <div class="item active">
+                                 <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <h1><u>Algorithm</u></h1>
+                                    <p>
+                                       I've been a 
+                                    </p> 
+                                 </div>
+                               </div>
+                               <div class="item">
+                                 <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <h1><u>Data</u></h1>
+                                    <p>
+                                       Chix
+                                    </p>
+                                 </div>
+                               </div>
+                               <div class="item">
+                                 <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <h1 ><u>Software</u></h1>
+                                   <p>
+                                      Chix
+                                   </p>
+                                 </div>
+                               </div>  
+                             </div>
+                             <a class="left carousel-control" href="#carousel123" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                             <a class="right carousel-control" href="#carousel123" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                           </div>
+                         </div>
+                        </div> 
+                     </div>
                   </div>
                </div>
             </section>
@@ -446,6 +484,7 @@
       <div class="arrow-holder">
          <p align="center" id="arrow-down" style="display: block;"><span><i class="fa fa-angle-down faa-float animated"></i></span></p>
       </div>
-      <script  src="js/carousel.js"></script>
+      <script  src="js/carousel-projects.js"></script>
+      <script  src="js/carousel-info.js"></script>
    </body>
 </html>
