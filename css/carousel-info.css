@@ -29,6 +29,15 @@
   .carousel-showsixmoveone .carousel-inner .cloneditem-1{
     display: block;
   }
+  .carousel-inner{
+    bottom: 22vh;
+  }
+  .carousel-showsixmoveone .carousel-control.left {
+    bottom: 47vh;
+  }
+  .carousel-showsixmoveone .carousel-control.right {
+    bottom: 47vh;
+  }  
 }
 @media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
   .carousel-showsixmoveone .carousel-inner > .item.active.right,
@@ -50,15 +59,6 @@
             transform: translate3d(0, 0, 0);
     left: 0;
   }
-  .carousel-inner{
-    bottom: 15vh;
-  }
-  .carousel-showsixmoveone .carousel-control.left {
-    bottom: 47vh;
-  }
-  .carousel-showsixmoveone .carousel-control.right {
-    bottom: 47vh;
-  }  
 }
 @media all and (min-width: 992px) {
   .carousel-showsixmoveone .carousel-inner > .active.left,
