@@ -3,13 +3,15 @@
 	text-align: center;
 }
 .info {
-  font-size: 3.5vmin;
+  font-size: 3vmin;
   position: relative;
   margin-top: 10vh;
 }
+
 .carousel-inner{
-	bottom: 42vh;
+	bottom: 39vh;
 }
 .section2 p{
 	font-family: 'HelveticaNeue-Light';
+
 }
